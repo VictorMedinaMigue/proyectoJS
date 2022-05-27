@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Play Card</title><!-- Titulo provisional -->
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li><a href="./index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>  
+        <h1>Bienvenido a GamerWeb</h1>
+       
+        <div class="juegos" id="juegos">
+            <div class="juego">
+                <img src="./img/blackjack.jpg" alt="juego-blackjack">
+                <h2>Blackjack</h2>
+                <a href="./pages/blackjack.html" class="boton">Jugar</a>
+            </div>
+            <div class="juego">
+                <img src="./img/poker.jpg" alt="juego-poker">
+                <h2>Poker</h2>
+                <a href="./pages/poker.html" class="boton">Jugar</a>
+            </div>
+        </div>
+    </main>
+
+    <section id="form" class="seccion__formulario">
+        <h2>Identificate antes de empezar a jugar</h2>
+        <form class="formulario" >
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <input class="boton" type="submit" value="Enviar" id="enviarFormulario">
+
+        </form>
+    </section>
+    <footer>
+        <div><p>Desarrollado por Victor Medina &copy;</p></div>
+    </footer>
+    <script src="./sweetalert2.all.min.js"></script>
+    <script src="./JS/validacion.js"></script>
+</body>
+</html>

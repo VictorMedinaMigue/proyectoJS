@@ -1,0 +1,170 @@
+/* Generales */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background-color: rgba(228, 228, 228, 0.527);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+h1, h2, h3, h4, p, a{
+    color: rgb(58, 58, 58);
+}
+
+img{
+    max-width: 100%;
+}
+
+.boton{
+    font-size: 18px;
+    background-color: rgba(255, 178, 78, 0.849);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 50px;
+    transition: all .3s ease-in-out;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background-color: rgb(255, 166, 49);
+}
+
+.invisible{
+    display: none;
+}
+
+.fallo{
+    background-color: rgba(255, 0, 0, 0.13);
+}
+
+.acierto{
+    background-color: rgba(0, 128, 0, 0.13);
+}
+
+.mensajeError{
+    border: 1px solid red;
+    color: red;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0 30px 0;
+}
+
+button{
+    margin-right: 20px;
+}
+
+
+/* Encabezado */
+
+.encabezado{
+    background: rgba(255, 178, 78, 0.849);
+}
+
+.menu__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu__lista li{
+    margin: 20px 40px;
+}
+
+.menu__lista li a{
+    font-size: 22px;
+    color: white;
+}
+
+/* main */
+
+main{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1{
+    margin: 20px 0 40px 0;
+}
+
+.juegos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.juego{
+    height: auto;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.juego img{
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Formulario */
+
+.seccion__formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 600px;
+}
+
+.formulario label,
+.formulario input{
+    font-size: 22px;
+    margin: 20px auto;
+}
+
+.formulario input{
+    width: 100%;
+    border: 1px solid rgba(255, 178, 78, 0.849);
+    border-radius: 4px;
+}
+
+.formulario input[type="submit"]{
+    margin: 20px auto;
+    width: 50%;
+}
+
+
+/* Footer */
+footer{
+    background-color: black;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div p{
+    color: white;
+}
